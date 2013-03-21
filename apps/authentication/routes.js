@@ -11,7 +11,10 @@ var routes = function(app) {
 	
 	app.get('/s',  function(req, res) {
 		console.log('--------------------------- ' + req.u);
-		res.render(__dirname + "/test.jade");
+		res.render(__dirname + "/test.jade",{
+			name: 'az7ar'
+		, title: 'testing context'
+		});
 	});
 	
 	app.post('/s', function(req, res) {
